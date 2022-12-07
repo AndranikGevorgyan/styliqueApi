@@ -1,0 +1,39 @@
+{
+  "name": "stylique-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/bin/www",
+    "start": "node ./src/bin/www",
+    "migrate": "knex migrate:latest --knexfile knex_configs.js",
+    "migrate-down": "knex migrate:down --knexfile knex_configs.js",
+    "seeding": "knex seed:run --knexfile knex.configs.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/joi": "^15.0.3",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.1",
+    "cookie-parser": "^1.4.6",
+    "db-migrate": "^0.11.13",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "knex": "^2.3.0",
+    "nodemon": "^2.0.20",
+    "objection": "^3.0.1",
+    "pg": "^8.8.0",
+    "postgres": "^3.3.2",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.15"
+  },
+  "engines": {
+    "node": "18.7.0",
+    "npm": "8.15.0"
+  },
+  "description": ""
+}
